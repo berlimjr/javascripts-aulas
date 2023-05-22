@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario De Cadastro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main class="w-screen h-screen flex flex-col  items-center justify-center ">
+        <form class="w-4/12 h-5/6 border-2 border-black gap-3 flex flex-col justify-center items-center">
+            <h1 class="text-2xl font-bold font-mono">Preencha o Formulario</h1>
+            <div class="w-96 h-3/4  flex flex-col gap-3">
+                <div>
+                    <label class="inputsNames" for="name1">Nome:</label>
+                    <input class="inputs" id="recebeNome" name="Nome:" type="text" value="Kleber">
+                </div>
+                <div>
+                    <label class="inputsNames" for="name2">Sobrenome:</label>
+                    <input class="inputs" id="recebe-nome2" name="sobrenome:" type="text" value="sobrenome">
+                </div>            
+                <div>
+                    <label class="inputsNames" for="email">Email:</label>
+                    <input class="inputs" id="emails" type="email" name="email:" value="email">
+                </div>
+                <div>
+                    <label class="inputsNames" for="data1">Data de nascimento:</label>
+                    <input class="w-52 border-2 border-black" id="dataNas" name="data" type="date">
+                </div>
+                <div>
+                    <label class="inputsNames" for="sexo">Qual o seu genero? </label>
+                    <input type="radio"  name="sexo" value="Masculino">
+                    <label for="huey">M?</label>
+                    <input type="radio"  name="sexo" value="Feminino">
+                    <label for="dewey">F?</label>
+                </div>
+                <label class="inputsNames" for="atividades">Você pratica alguma atividade? </label>
+                <input type="checkbox" name="atividades1" id="atividades" value="Futebol">
+                <input type="checkbox" name="atividades1" id="atividades2" value="Volei">
+                <input type="checkbox" name="atividades1" id="atividades3" value="Basquete">
+                <input type="checkbox" name="atividades1" id="atividades4" value="Tenis">
+            </div>
+            <input class="border-2 bg-slate-600 text-slate-50 p-2 cursor-pointer rounded-md" onclick="enviarNome()" type="button" value="Enviar">
+        </form>
+    </main>
+    <script src="js-aula.js"></script>
+</body>
+</html>

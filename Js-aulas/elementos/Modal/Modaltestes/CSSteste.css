@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+.bodyModal {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+form {
+    width: 290px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    padding-top: 55px;
+    align-items: center;
+}
+.modal {
+    position: absolute;
+    left: 500px;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    align-items: center;
+    padding: 18px;
+    background-color: white;
+    border-radius: 15px;
+}
+.inpts {
+    width: 220px;
+    border-radius: 5px;
+    padding: 12px;
+    border: none;
+    background-color: beige;
+    display: flex;
+    
+}
+#enviar {
+    width: 245px;
+    border-radius: 5px;
+    padding: 12px;
+    border: none;
+    background-color: rgb(0, 209, 17);
+    cursor: pointer;
+    
+}
+.closeBtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.openBtn {
+    cursor: pointer;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+.modalClose {
+    display: none;
+}
+.modalOpen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
