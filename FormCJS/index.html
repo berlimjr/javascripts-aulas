@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario JS</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="main">
+        <form>
+            <div class="textsAndBtn">
+                <h1>Bem vindo a CarMax</h1>
+                <p>Preencha o formulario de login.</p>
+                <div class="Btn1e2">
+                    <button class="select1">LOGIN</button>
+                    <button class="select2">CADASTRO</button>
+                </div>
+            </div>
+            <div class="Inputs">
+                <input id="email" type="email" placeholder="EMAIL">
+                <span id="invalida-li" class="invalid">Email invalido</span>
+                <input id="senha" type="password" placeholder="SENHA">
+                <span id="invalida-senha" class="invalid2">Senha invalido</span>
+                <input id="telN" type="number" placeholder="NÚMERO DE TELEFONE">
+            </div>
+            <div class="BtEnviar">
+                <input id="enviarT" disabled class="submitBtn" value="LOGAR" type="submit">
+            </div>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
